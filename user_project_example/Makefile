@@ -24,7 +24,7 @@ final/gds/$(TOP).gds:
 .PHONY: klayout-drc
 klayout-drc:
 	# Run KLayout DRC on the generated GDS
-	python3 $(PDK_ROOT)/$(PDK)/libs.tech/klayout/tech/drc/run_drc.py --path $(PROJECT_DIR)/$(TOP)/final/gds/$(TOP).gds --run_mode=deep --disable_extra_rules --no_density --run_dir $(PROJECT_DIR)/$(TOP)/final/klayout_drc/klayout_drc_report.log
+	nix-shell --pure $(LIBRELANE_DIR) --run "python3 $(PDK_ROOT)/$(PDK)/libs.tech/klayout/tech/drc/run_drc.py --path $(PROJECT_DIR)/$(TOP)/final/gds/$(TOP).gds --run_mode=deep --disable_extra_rules --no_density --run_dir $(PROJECT_DIR)/$(TOP)/final/klayout_drc/klayout_drc_report.log"
 
 .PHONY: view_results
 view_results:
