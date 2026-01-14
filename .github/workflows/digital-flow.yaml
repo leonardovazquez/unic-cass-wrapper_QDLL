@@ -11,6 +11,7 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: physical implemetation
-      run:  source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh |
-            make
+    - name: physical implementation
+      run: |
+        source /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+        make
