@@ -1,4 +1,4 @@
-TOP = user_project_wrapper_analog
+TOP = unic_cass_wrapper_analog
 TAG = $(TOP)_tag
 PROJECT_DIR = ../
 LIBRELANE_DIR ?= $(PROJECT_DIR)/librelane
