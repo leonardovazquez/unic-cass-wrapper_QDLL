@@ -7,7 +7,7 @@
 This project was developed by students from Fulgor Foundation as part of the UNIC-CASS open-source tapeout program.
 
 **Team Members:**
-- Leonardo David Vazquez — Project Lead, Analog Designer Integration
+- Leonardo David Vazquez — Project Lead,  Integration and Analog Design
 - Martín Doric — Project Lead,, Layout Consultant
 - Santiago Basignana — Layout Designer
 - Mateo Buteler — Toolflow Integration
@@ -130,4 +130,5 @@ This project is open-source project.
 
 
 Refer to [README](https://github.com/unic-cass/unic-cass-wrapper/blob/main/docs/README.md) for this sample project documentation.
+
 
