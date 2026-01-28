@@ -126,7 +126,8 @@ Special thanks to:
 
 ## 📜 License
 
-This project is open-source and distributed under the [Apache 2.0 License](LICENSE).
+This project is open-source project.
 
 
 Refer to [README](https://github.com/unic-cass/unic-cass-wrapper/blob/main/docs/README.md) for this sample project documentation.
+
