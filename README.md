@@ -36,7 +36,7 @@ The design features two parallel delay-locked loops (DLLs) targeting timing alig
 - `Layouts/` — KLayout layout files.
 - `python/` — Python codes for post-processing analysis.
 - `testbenchs/` — Testbenches for functional simulations.
-- `docs/` — Documentation and reports. The Mock Tape-Out Report is: [QDLL Mock Tape Out Milestone 1](https://docs.google.com/presentation/d/1orFER-k-OxAZ98UhGs-Uzx1Z1N6N06TE/edit?usp=sharing&ouid=117376798143447321348&rtpof=true&sd=true)
+- `docs/` — Documentation and reports. The Mock Tape-Out Report is: [QDLL Mock Tape Out Milestone 1]([https://docs.google.com/presentation/d/1orFER-k-OxAZ98UhGs-Uzx1Z1N6N06TE/edit?usp=sharing&ouid=117376798143447321348&rtpof=true&sd=true](https://docs.google.com/presentation/d/1buPqdt9BBiQd7oaACnhc4rbIgDi21SVI7TTmWeHhwfk/edit?usp=sharing)
 
 ---
 
@@ -130,5 +130,6 @@ This project is open-source project.
 
 
 Refer to [README](https://github.com/unic-cass/unic-cass-wrapper/blob/main/docs/README.md) for this sample project documentation.
+
 
 
