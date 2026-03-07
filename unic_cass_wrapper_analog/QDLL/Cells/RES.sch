@@ -1,15 +1,22 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -210 -0 -160 -0 {lab=RIN}
 N -100 -0 -70 0 {lab=#net1}
 N -10 -0 20 0 {lab=#net2}
 N 80 -0 120 -0 {lab=#net3}
 N 180 -0 230 0 {lab=ROUT}
+N 290 0 320 0 {lab=ROUT}
+N 380 0 410 0 {lab=ROUT}
+N 470 0 510 0 {lab=ROUT}
+N 570 0 620 0 {lab=ROUT}
+N 680 0 710 0 {lab=ROUT}
+N 770 0 800 0 {lab=ROUT}
+N 860 0 900 0 {lab=ROUT}
+N 960 0 1010 0 {lab=ROUT}
 C {sg13g2_pr/rppd.sym} -130 0 3 0 {name=R1
 w=1e-6
 l=10e-6
@@ -47,4 +54,76 @@ b=0
 m=1
 }
 C {ipin.sym} -210 0 0 0 {name=p1 lab=RIN}
-C {opin.sym} 230 0 0 0 {name=p5 lab=ROUT}
+C {opin.sym} 1010 0 0 0 {name=p5 lab=ROUT}
+C {sg13g2_pr/rppd.sym} 260 0 3 0 {name=R2
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 350 0 3 0 {name=R6
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 440 0 3 0 {name=R7
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 540 0 3 0 {name=R8
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 650 0 3 0 {name=R9
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 740 0 3 0 {name=R10
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 830 0 3 0 {name=R11
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
+C {sg13g2_pr/rppd.sym} 930 0 3 0 {name=R12
+w=1e-6
+l=10e-6
+model=rppd
+body=sub!
+spiceprefix=X
+b=0
+m=1
+}
