@@ -36,7 +36,9 @@ The design features two parallel delay-locked loops (DLLs) targeting timing alig
 - `Layouts/` — KLayout layout files.
 - `python/` — Python codes for post-processing analysis.
 - `testbenchs/` — Testbenches for functional simulations.
-- `docs/` — Documentation and reports. The Mock Tape-Out Report is: [QDLL Mock Tape Out Milestone 1]([https://docs.google.com/presentation/d/1orFER-k-OxAZ98UhGs-Uzx1Z1N6N06TE/edit?usp=sharing&ouid=117376798143447321348&rtpof=true&sd=true](https://docs.google.com/presentation/d/1buPqdt9BBiQd7oaACnhc4rbIgDi21SVI7TTmWeHhwfk/edit?usp=sharing)
+- `docs/` — Documentation and reports. The Mock Tape-Out Report is: 
+[QDLL Mock Tape Out Milestone 1](https://docs.google.com/presentation/d/1buPqdt9BBiQd7oaACnhc4rbIgDi21SVI7TTmWeHhwfk/edit?usp=sharing)
+[QDLL Mock Tape Out Milestone 2](https://docs.google.com/presentation/d/1SaUPbj3oBROP9z1-2TtK8tWIxL02-J9qEyfox9xo-iI/edit?usp=sharing)
 
 ---
 
@@ -91,12 +93,12 @@ The design features two parallel delay-locked loops (DLLs) targeting timing alig
 
 ## 📏 Estimated Chip Area
 
-- **Dimensions:** 111.96 µm × 63.598 µm  
-- **Total area:** 7120 µm² = 0.00712 mm²
+- **Dimensions:** 100 µm × 100 µm  
+- **Total area:** 10000 µm² = 0.01 mm²
 
 
 <p align="center">
-<img width="888" height="515" alt="image" src="https://github.com/user-attachments/assets/bdd3806f-6561-482b-b156-c2c47ab26043" />
+  <img width="941" height="541" alt="image" src="https://github.com/user-attachments/assets/e3e0819a-c1d5-4399-898d-5d0034b7dd4f" />
 </p>
 
 
@@ -105,11 +107,14 @@ The design features two parallel delay-locked loops (DLLs) targeting timing alig
 ## 📅 Current Status
 
 - ✅ Schematic design and functional simulations completed.
-- 🔄 Layout of core blocks DRC/LVS In Progress.
+- ✅ Layout of core blocks DRC/LVS completed.
+- 🔄 Post-Layout Simulations In Progress.
 
+- 
 <p align="center">
-<img width="901" height="512" alt="image" src="https://github.com/user-attachments/assets/f527d8fd-0cd1-400a-939d-d120d4d58ba3" />
+<img width="1314" height="728" alt="image" src="https://github.com/user-attachments/assets/73327962-c8ca-483a-b55b-74c9b348b97e" /
 </p>
+
 ---
 
 ## 💬 Team & Acknowledgements
@@ -130,6 +135,7 @@ This project is open-source project.
 
 
 Refer to [README](https://github.com/unic-cass/unic-cass-wrapper/blob/main/docs/README.md) for this sample project documentation.
+
 
 
 
