@@ -1,6 +1,6 @@
-* Extracted by KLayout with SG13G2 LVS runset on : 07/03/2026 21:30
+* Extracted by KLayout with SG13G2 LVS runset on : 08/03/2026 19:27
 
-.SUBCKT QDLL VSS VDD IN2 OUT2 IN1 OUT1
+.SUBCKT QDLL VSS VDD IN2 OUT2 IN1 OUT1 CPOUT CPIN
 M$1 VSS IN2 \$28 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.374p AD=0.174625p
 + PS=2.46u PD=1.185u
 M$2 VSS OUT2 \$28 VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.15245p AD=0.174625p
@@ -31,11 +31,11 @@ M$39 IN2 IN1 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
 + PS=2.16u PD=2.16u
 M$40 IN1 IN2 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.2516p AD=0.2516p
 + PS=2.16u PD=2.16u
-M$41 \$55 \$72 VSS VSS sg13_lv_nmos L=0.25u W=2u AS=0.68p AD=0.68p PS=4.68u
+M$41 \$55 CPOUT VSS VSS sg13_lv_nmos L=0.25u W=2u AS=0.68p AD=0.68p PS=4.68u
 + PD=4.68u
 M$42 \$31 \$1 VSS VSS sg13_lv_nmos L=0.25u W=2u AS=0.68p AD=0.68p PS=4.68u
 + PD=4.68u
-M$43 VSS \$72 \$56 VSS sg13_lv_nmos L=0.18u W=3.5u AS=1.19p AD=1.19p PS=7.68u
+M$43 VSS CPOUT \$56 VSS sg13_lv_nmos L=0.18u W=3.5u AS=1.19p AD=1.19p PS=7.68u
 + PD=7.68u
 M$44 \$50 IN2 \$33 VSS sg13_lv_nmos L=0.13u W=2u AS=0.68p AD=0.68p PS=4.68u
 + PD=4.68u
@@ -81,9 +81,9 @@ M$89 \$77 OUT1 VSS VSS sg13_lv_nmos L=0.13u W=0.55u AS=0.174625p AD=0.15245p
 + PS=1.185u PD=1.17u
 M$90 VSS IN1 \$81 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.15245p AD=0.0888p
 + PS=1.17u PD=0.98u
-M$91 \$81 OUT1 \$79 VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.0888p AD=0.1628p
+M$91 \$81 OUT1 CPIN VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.0888p AD=0.1628p
 + PS=0.98u PD=1.18u
-M$92 \$79 \$77 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1628p AD=0.3108p
+M$92 CPIN \$77 VSS VSS sg13_lv_nmos L=0.13u W=0.74u AS=0.1628p AD=0.3108p
 + PS=1.18u PD=2.32u
 M$93 \$34 IN2 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p
 + PS=2.92u PD=1.5u
@@ -167,10 +167,10 @@ M$182 \$78 IN1 VDD VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.3808p AD=0.2128p
 + PS=2.92u PD=1.5u
 M$183 VDD OUT1 \$78 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.2128p
 + PS=1.5u PD=1.5u
-M$184 \$78 \$77 \$79 VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p
+M$184 \$78 \$77 CPIN VDD sg13_lv_pmos L=0.13u W=1.12u AS=0.2128p AD=0.3808p
 + PS=1.5u PD=2.92u
 R$190 \$1 \$2 rppd w=1u l=120u ps=0 b=0 m=1
-R$208 \$79 \$72 rppd w=1u l=120u ps=0 b=0 m=1
+R$208 CPIN CPOUT rppd w=1u l=120u ps=0 b=0 m=1
 C$209 \$1 VSS cap_cmim w=60u l=20u A=1200p P=160u m=1
-C$210 \$72 VSS cap_cmim w=60u l=20u A=1200p P=160u m=1
+C$210 CPOUT VSS cap_cmim w=60u l=20u A=1200p P=160u m=1
 .ENDS QDLL
